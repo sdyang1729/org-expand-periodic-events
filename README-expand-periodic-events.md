@@ -32,6 +32,21 @@ Into this:
 
 ## Installation
 
+
+If you want to use straight use-package,
+```elisp
+(use-package org-expand-periodic-events
+  :straight (org-expand-periodic-events
+             :type git
+             :host github
+             :repo "sdyang1729/org-expand-periodic-events")
+  :defer t
+  :bind
+  (("C-c e p" . org-expand-periodic-event-at-point)
+   ("C-c e b" . org-expand-periodic-events-in-buffer))
+  )
+```
+
 Add to your Emacs config:
 
 ```elisp
