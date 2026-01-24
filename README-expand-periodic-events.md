@@ -33,7 +33,7 @@ Into this:
 ## Installation
 
 
-If you want to use straight use-package,
+(Method 1) If you want to use straight use-package,
 ```elisp
 (use-package org-expand-periodic-events
   :straight (org-expand-periodic-events
@@ -47,13 +47,13 @@ If you want to use straight use-package,
   )
 ```
 
-Add to your Emacs config:
+(Method 2) Add to your Emacs config:
 
 ```elisp
 (load-file "~/path/to/org-expand-periodic-events.el")
 ```
 
-Or if it's in your load-path:
+(Method 3) Or if it's in your load-path:
 
 ```elisp
 (require 'org-expand-periodic-events)
