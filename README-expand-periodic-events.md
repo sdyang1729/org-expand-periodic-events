@@ -43,7 +43,8 @@ Into this:
   :defer t
   :bind
   (("C-c e p" . org-expand-periodic-event-at-point)
-   ("C-c e b" . org-expand-periodic-events-in-buffer))
+   ("C-c e b" . org-expand-periodic-events-in-buffer)
+   ("C-c e i" . org-expand-insert-expanded-event))
   )
 ```
 
@@ -210,7 +211,6 @@ Add to your config:
 
 ```elisp
 (with-eval-after-load 'org
-  (define-key org-mode-map (kbd "C-c e e") 'org-expand-periodic-event-at-point)
   (define-key org-mode-map (kbd "C-c e b") 'org-expand-periodic-events-in-buffer)
   (define-key org-mode-map (kbd "C-c e i") 'org-expand-insert-expanded-event))
 ```
